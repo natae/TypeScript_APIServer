@@ -1,0 +1,6 @@
+USE COMMON;
+
+CREATE TABLE IF NOT EXISTS `Account` (
+    AccountId BIGINT UNSIGNED NOT NULL PRIMARY KEY,
+    Nickname varchar(20) NOT NULL UNIQUE
+);
