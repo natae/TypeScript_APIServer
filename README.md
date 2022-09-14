@@ -1,6 +1,6 @@
 # API Server with TypeScript
 ## npm
-- typeScript
+- typescript
 - express
 - mysql2
 # How to run
