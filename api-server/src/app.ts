@@ -1,8 +1,11 @@
-import express, { Request, Response } from 'express';
-import rootRouter from './router/root';
+import express from 'express';
+import accountRouter from './router/account';
+import config from './config/server';
 
 const app = express();
 
-app.use('/', rootRouter);
+app.use(express.json());
 
-app.listen(8080);
+app.use('/account', accountRouter);
+
+app.listen(config.port);
