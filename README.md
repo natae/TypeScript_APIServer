@@ -28,7 +28,7 @@ docker-compose up
 - Request Body
   - {"nickname": "\[NICKNAME\]"}
 - Resonse Body
-  - {"AccountId": 10, "Nickname": "\[NICKNAME\]"}
+  - {"AccountId": \[ACCOUNT_ID\], "Nickname": "\[NICKNAME\]"}
 ## Deleting account
 - Method: POST
 - Uri: /account/delete
