@@ -37,6 +37,5 @@ docker-compose up
 - Resonse Body
   - Success: \[AFFECTED_ROW_COUNT\]
 # To-do
-- healthcheck controller
 - logger
 - error handling
