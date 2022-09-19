@@ -3,7 +3,7 @@
 - typescript
 - express
 - mysql2
-# How to run
+## How to run
 ```
 # go to deploy directory
 cd deploy
@@ -14,28 +14,28 @@ docker-compose build
 # run api-server with mysql
 docker-compose up
 ```
-# API Specification
-## Creating account
+## API Specification
+### Creating account
 - Method: POST
 - Uri: /account/create
 - Request Body
   - {"nickname": "\[NICKNAME\]"} 
 - Resonse Body
   - Success: \[LAST_INSERT_ID\] 
-## Getting account
+### Getting account
 - Method: POST
 - Uri: /account/get
 - Request Body
   - {"nickname": "\[NICKNAME\]"}
 - Resonse Body
   - {"AccountId": \[ACCOUNT_ID\], "Nickname": "\[NICKNAME\]"}
-## Deleting account
+### Deleting account
 - Method: POST
 - Uri: /account/delete
 - Request Body
   - {"nickname": "\[NICKNAME\]"}
 - Resonse Body
   - Success: \[AFFECTED_ROW_COUNT\]
-# To-do
+## To-do
 - logger
 - error handling
